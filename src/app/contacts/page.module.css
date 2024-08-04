@@ -1,0 +1,49 @@
+.contacts {
+  position: relative;
+  top: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--color-green);
+  padding: 40px 20px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.contactInfo__title {
+  font-size: 20px;
+  color: #141E30;
+}
+
+.contactInfo__text {
+  font-size: 16px;
+  color: #141E30;
+}
+
+.contactInfo__url {
+  position: relative;
+  font-size: 16px;
+  color: #141E30;
+}
+
+.contactInfo__location {
+  padding: 10px 0;
+}
+
+.contactLink {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
+.mapContainer {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+}

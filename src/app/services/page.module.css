@@ -1,0 +1,25 @@
+.services__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 30px;
+  margin: 0 -20px;
+  background: var(--color-green);
+}
+
+.title {
+  font-size: 6rem;
+  margin: 20px 0;
+  color: var(--color-grey-2);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: inherit;
+  letter-spacing: -4px;
+  line-height: 6.4rem;
+  text-align: center;
+}
