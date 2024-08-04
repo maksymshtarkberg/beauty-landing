@@ -282,6 +282,7 @@
 
   .heading__containerOuter {
     width: 50%;
+    height: 50%;
     align-self: flex-end;
     top: -50px;
   }
