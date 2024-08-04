@@ -309,9 +309,6 @@
     align-self: flex-start;
   }
 
-  .heading {
-    max-width: 120px;
-  }
 
   .heading__containerOuter {
     align-self: flex-end;
