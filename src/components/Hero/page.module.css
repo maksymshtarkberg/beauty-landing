@@ -130,6 +130,9 @@
 
 .heading__sub {
   color: var(--color-black-1);
+  font-size: 3rem;
+  letter-spacing: -1px;
+  line-height: 5rem;
 }
 
 .bookAppointment__link {
@@ -309,6 +312,9 @@
     align-self: flex-start;
   }
 
+  .heading {
+    width: 130px;
+  }
 
   .heading__containerOuter {
     align-self: flex-end;
@@ -316,6 +322,6 @@
   }
 
   .decorationSlashLines__containerOuter {
-    bottom: 80px;
+    bottom: 30%;
   }
 }

@@ -24,13 +24,8 @@ const Hero = () => {
           <div className={styles.heading__containerInner}>
             <div className={styles.heading__overlayContainer}>
               <div className={styles.heading__overlay_text}></div>
-              <h1 className={styles.heading}>
-                WE CHANGE THE WORLD
-                <br />
-                <span className={styles.heading__sub}>
-                  ONE EYEBROW AT A TIME
-                </span>
-              </h1>
+              <h1 className={styles.heading}>WE CHANGE THE WORLD</h1>
+              <h1 className={styles.heading__sub}>ONE EYEBROW AT A TIME</h1>
             </div>
             <div className={styles.heading__overlayContainer}>
               <div className={styles.heading__overlay_link}></div>
