@@ -1,11 +1,12 @@
 .contacts {
   position: relative;
-  top: 25%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background: var(--color-green);
   padding: 40px 20px;
+  padding-top: 100px;
 }
 
 .contactInfo {
@@ -41,9 +42,24 @@
   text-decoration: underline;
 }
 
-
 .mapContainer {
   width: 100%;
   max-width: 800px;
   height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contacts {
+    align-items: stretch;
+  }
+
+  .mapContainer {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mapContainer {
+    height: 200px;
+  }
 }

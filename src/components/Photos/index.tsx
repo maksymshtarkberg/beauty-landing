@@ -7,17 +7,18 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 import ReactImageGallery from "react-image-gallery";
 
-export default function App() {
+export default function Photos() {
   const images = [
     {
-      original: "/AlbumArtSmall.jpg",
-      thumbnail: "/AlbumArtSmall.jpg",
+      original: "/AlbumArtSmall.jpg?w=1000&h=600",
+      thumbnail: "/AlbumArtSmall.jpg?w=250&h=150",
     },
     {
-      original: "/face.webp",
-      thumbnail: "/face.webp",
+      original: "/face.webp?w=1000&h=600",
+      thumbnail: "/face.webp?w=250&h=150",
     },
   ];
+
   const images1 = [
     {
       original: "https://picsum.photos/id/1018/1000/600/",
