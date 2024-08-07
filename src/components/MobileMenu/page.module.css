@@ -1,0 +1,84 @@
+/* MOBILE MENU OVERLAY */
+
+.menu__overlayOuter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  z-index: 5;
+  transition: all 2s ease 0.1s;
+}
+
+.menu__overlayInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem;
+  font-size: 2.4rem;
+  height: 100vh;
+}
+
+.menu__overlay_open {
+  transform: translateX(-120vw);
+}
+
+.menu__header {
+  width: 100%;
+}
+
+.menu__nav_header {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__nav_main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu__navItem {
+  list-style: none;
+}
+
+.menu__btn_close {
+  position: absolute;
+  left: 94%;
+}
+
+.nav {
+  display: flex;
+}
+
+.menu__nav_social {
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.aside {
+  width: 9.6rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.aside__nav {
+  flex-direction: column;
+  gap: 2rem;
+}

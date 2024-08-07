@@ -215,13 +215,13 @@
 
 @media only screen and (max-width: 600px) {
   .image__containerOuter {
-    top: 100px;
+    top: 140px;
     width: 40%;
     right: 115px;
   }
 
   .about__left {
-    padding-top: 100px;
+    padding-top: 0;
   }
 
   .about__title {

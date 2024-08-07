@@ -108,6 +108,10 @@ div .image-gallery-fullscreen-button {
   top: auto;
 }
 
+div .image-gallery-icon {
+  z-index: 3;
+}
+
 .image-gallery-svg {
   transition: color 0.2s ease;
 }
