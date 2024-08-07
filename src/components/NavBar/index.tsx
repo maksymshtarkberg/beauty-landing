@@ -3,12 +3,21 @@ import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
 import { useMediaQuery } from "react-responsive";
 import MobileMenu from "../MobileMenu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const router = useRouter();
-  const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
+  const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpened, setIsMenuOpened] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 700);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleMenuToggle = () => {
     setIsMenuOpened((prev) => !prev);
@@ -63,7 +72,7 @@ const Navbar = () => {
       )}
 
       {isMobile && (
-        <>
+        <div>
           <svg
             onClick={handleMenuToggle}
             version="1.1"
@@ -72,10 +81,10 @@ const Navbar = () => {
             height="32"
             viewBox="-4 -6 32 32"
           >
-            <title>menu</title>
+            <title>Menu</title>
             <path d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z"></path>
           </svg>
-        </>
+        </div>
       )}
 
       {isMenuOpened && <MobileMenu handleMenuToggle={handleMenuToggle} />}
