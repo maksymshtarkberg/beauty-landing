@@ -1,10 +1,11 @@
 "use client";
 
 import { MapProvider } from "@/providers/map-provider";
-import { GoogleMap, Marker } from "@react-google-maps/api";
+import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 
 import styles from "./page.module.css";
 import LocationItem from "@/ui/location";
+import { useEffect, useState } from "react";
 const defaultMapContainerStyle = {
   width: "100%",
   height: "300px",
