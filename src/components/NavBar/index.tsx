@@ -1,9 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
-import { useMediaQuery } from "react-responsive";
 import MobileMenu from "../MobileMenu";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
@@ -25,15 +25,15 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div onClick={() => router.push("/")} className={styles.nav__link}>
-        <div className={styles.logo} aria-label="Company Logo">
-          <div>BRW</div>
-          <div className={styles.logo__textContainer}>
-            <p className={styles.logo__text}>BAR</p>
-            <p className={styles.logo__text}>inc.</p>
-          </div>
-        </div>
+      <div onClick={() => router.push("/")} className={styles.logo}>
+        <Image
+          width={150}
+          height={150}
+          src={"/2.png"}
+          alt="DR.ELENA-KHUDIAKOVA"
+        />
       </div>
+
       {!isMobile && (
         <ul className={styles.nav} aria-label="Main Navigation">
           <li className={styles.nav__item}>

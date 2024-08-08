@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import styles from "./page.module.css";
+import SVGStripes from "@/ui/svg/stipes";
 
 interface ServiceProps {
   params: {
@@ -44,21 +45,30 @@ export default function Service({ params }: ServiceProps) {
 
   return (
     <>
-      <div className={styles.service__container}>
-        <div className={styles.service__content}>
-          <h1>{service.title}</h1>
-          <p>{service.text}</p>
-        </div>
-        <div className={styles.image__containerOuter}>
-          <div className={styles.image__containerInner}>
-            <img
-              src={service.img}
-              alt="woman's face"
-              className={styles.image__img}
-            />
+      <>
+        <div className={styles.about}>
+          <div className={styles.decorationSlashLines__containerOuter}>
+            <div className={styles.decorationSlashLines__containerInner}>
+              <SVGStripes />
+            </div>
+          </div>
+          <div className={styles.about__left}>
+            <h2 className={styles.about__title}>{service.title}</h2>
+            <div className={styles.about__overlay_text}>
+              <p className={styles.about__text}>{service.text}</p>
+            </div>
+          </div>
+          <div className={styles.image__containerOuter}>
+            <div className={styles.image__containerInner}>
+              <img
+                src={service.img}
+                alt="woman's face"
+                className={styles.image__img}
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </>
     </>
   );
 }

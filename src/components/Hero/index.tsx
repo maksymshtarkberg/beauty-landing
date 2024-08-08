@@ -2,10 +2,10 @@
 
 import SVGStripes from "@/ui/svg/stipes";
 import styles from "./page.module.css";
-import { useMediaQuery } from "react-responsive";
+import useIsMobile from "@/app/util/mediaQuery";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
+  const isMobile = useIsMobile(700);
 
   return (
     <main className={styles.main}>

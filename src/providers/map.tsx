@@ -46,7 +46,11 @@ function Map({ address }: { address: string }) {
 
   return isLoaded ? (
     <GoogleMap
-      mapContainerStyle={{ height: "400px", width: "100%" }}
+      mapContainerStyle={{
+        height: "400px",
+        width: "100%",
+        borderRadius: "8px",
+      }}
       center={center}
       zoom={15}
       onLoad={onLoad}
